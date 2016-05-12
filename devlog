@@ -1,3 +1,10 @@
 Development Log:
 
 Day 1: 5/12/16
+-created Location object and created getAdjacentLocation method
+-created Blob object
+-created BlobDetector object
+
+To Do:
+-work out getting video from a camera
+-work on blob detection algorithm
