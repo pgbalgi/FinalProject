@@ -34,7 +34,7 @@ public class Main {
 
 		byte[] pixels = null, currentpixels = null, prevPixels = null;
 		
-		BlobDetector detector = new BlobDetector(captureSize);
+		Detector detector = new Detector(captureSize);
 		
 		while (true) {
 			// load and convert the image into a usable format
@@ -42,15 +42,17 @@ public class Main {
 
 			pixels = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
 
-			Point loc = gui.getLastClickedLocation();
-			if (loc != null) {
-				System.out.println("Clicked at: " + loc);
-				System.out.println("Clicked on color:  r: " + gui.getR() + " g: "
-						+ gui.getG() + " b: " + gui.getB());
-			}
-			loc = null;
+//			Point loc = gui.getLastClickedLocation();
+//			if (loc != null) {
+//				System.out.println("Clicked at: " + loc);
+//				System.out.println("Clicked on color:  r: " + gui.getR() + " g: "
+//						+ gui.getG() + " b: " + gui.getB());
+//			}
+//			loc = null;
 			
-			maskColor(pixels, gui.getR(), gui.getG(), gui.getB());
+			detector.setImage(pixels);
+			
+//			maskColor(pixels, gui.getR(), gui.getG(), gui.getB());
 
 			gui.setBufferedImageSafe(image);
 		}

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class Blob {
+public class Object {
 	private ArrayList<Location> blob;
 	private double time;
 	
-	public Blob() {
+	public Object() {
 		blob = new ArrayList<Location>();
 	}
 	
