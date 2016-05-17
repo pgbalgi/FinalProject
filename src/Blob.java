@@ -15,4 +15,14 @@ public class Blob {
 	public void add(Location loc) {
 		blob.add(loc);
 	}
+	
+	public Location getCenter() {
+		if(blob.size() == 0) return null;
+		int centerRow = 0, centerCol = 0;
+		for(Location loc : blob) {
+			centerRow += loc.getRow();
+			centerCol += loc.getCol();
+		}
+		return new Location(centerRow/blob.size(), centerCol/blob.size());
+	}
 }

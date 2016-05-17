@@ -8,3 +8,18 @@ Day 1: 5/12/16
 To Do:
 -work out getting video from a camera
 -work on blob detection algorithm
+
+Day 2: 5/14/16
+-added ClickableWindow object
+-added boofcv library
+
+To Do:
+-covert image to a 2D array
+-work on blob detection algorithm
+
+Day 2: 5/16/16
+-set up the main class using the ClickableWindowDemo class
+-covert image to a 2D array
+
+To Do:
+-work on blob detection algorithm
