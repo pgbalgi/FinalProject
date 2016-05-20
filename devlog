@@ -19,14 +19,25 @@ To Do:
 
 Day 2: 5/16/16
 -set up the main class using the ClickableWindowDemo class
--covert image to a 2D array
+-convert 1D pixel array to a 2D array
 
 To Do:
 -work on blob detection algorithm
 
 Day 3: 5/17/16
--worked on blob detection algorithm
+-worked on border detection algorithm
 
 To Do:
+-finish border detection
 -finish blob detection
 -draw box around object
+
+Day 4: 5/19/16
+-finished border detection algorithm
+-deleted extraneous Location class
+-organized Main class
+
+To Do:
+-identify blobs using borders
+-store blobs
+-draw box around blobs

@@ -1,28 +1,28 @@
+import java.awt.Point;
 import java.util.ArrayList;
 
 public class Object {
-	private ArrayList<Location> blob;
-	private double time;
+	private ArrayList<Point> blob;
 	
 	public Object() {
-		blob = new ArrayList<Location>();
+		blob = new ArrayList<Point>();
 	}
 	
-	public ArrayList<Location> getBlob() {
+	public ArrayList<Point> getBlob() {
 		return blob;
 	}
 	
-	public void add(Location loc) {
+	public void add(Point loc) {
 		blob.add(loc);
 	}
 	
-	public Location getCenter() {
+	public Point getCenter() {
 		if(blob.size() == 0) return null;
 		int centerRow = 0, centerCol = 0;
-		for(Location loc : blob) {
-			centerRow += loc.getRow();
-			centerCol += loc.getCol();
+		for(Point loc : blob) {
+			centerRow += loc.getY();
+			centerCol += loc.getX();
 		}
-		return new Location(centerRow/blob.size(), centerCol/blob.size());
+		return new Point(centerRow/blob.size(), centerCol/blob.size());
 	}
 }
