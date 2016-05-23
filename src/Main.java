@@ -20,7 +20,6 @@ public class Main {
 			// load and convert the image into a usable format
 			image = webcam.getImage();
 			pixels = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
-			
 			detector.updateImage(pixels);
 			drawEdge();
 			
@@ -33,7 +32,7 @@ public class Main {
 		Dimension captureSize = new Dimension(640, 480);
 		Dimension displaySize = new Dimension(640, 480);
 
-		webcam = Webcam.getWebcams().get(1);
+		webcam = Webcam.getWebcams().get(0);
 //		webcam = Webcam.getDefault();
 
 		webcam.setViewSize(captureSize);
