@@ -41,3 +41,27 @@ To Do:
 -identify blobs using borders
 -store blobs
 -draw box around blobs
+
+Day 5: 5/23/16
+-improved border detection algorithm
+-decided not to draw box around blobs
+
+To Do:
+-identify blobs using borders
+-store blobs
+
+Day 6: 5/24/16
+-decided to cut out blob identification
+-added brightness filter
+-added vertical and horizontal edge filters
+
+To Do:
+-organize code
+-add comments
+-delete unnecessary methods/variables
+
+
+Day 7: 5/25/16
+-organized detectors into separate classes using inheritance
+-organized code
+-added comments

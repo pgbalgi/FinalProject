@@ -1,14 +1,15 @@
+package main;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
-import java.util.Arrays;
 
 import com.github.sarxos.webcam.Webcam;
 
 import boofcv.gui.image.ImagePanel;
 
+@SuppressWarnings("serial")
 public class ClickableWindow extends ImagePanel implements MouseListener {
 	private static final double RADIUS = 10;
 	private Webcam w;
