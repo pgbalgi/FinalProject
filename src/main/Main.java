@@ -33,7 +33,7 @@ public class Main {
 		Dimension captureSize = new Dimension(640, 480);
 		Dimension displaySize = new Dimension(640, 480);
 
-		webcam = Webcam.getWebcams().get(1);
+		webcam = Webcam.getWebcams().get(0);
 //		webcam = Webcam.getDefault();
 
 		webcam.setViewSize(captureSize);
