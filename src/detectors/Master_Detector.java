@@ -20,6 +20,7 @@ public class Master_Detector {
 		return isEdge[row][col];
 	}
 
+	//runs each frame and updates isEdge[][]
 	public void updateImage(byte[] newPixels) {		
 		isEdge = new boolean[HEIGHT][WIDTH];
 
@@ -45,6 +46,7 @@ public class Master_Detector {
 		}	
 	}
 	
+	//checks if the edge is adjacent to at least 2 other edges
 	private boolean hasAdjacentEdge(int row, int col) {
 		int adjacent = 0;
 		if(!isEdge[row][col]) return false;

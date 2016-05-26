@@ -5,7 +5,7 @@ public class Motion extends Detector {
 
 	public Motion(byte[] newPixels, int height, int width) {
 		super(newPixels, height, width);
-		THRESHOLD = 40;
+		THRESHOLD = 45;
 	}
 
 	protected boolean canBeEdge(int row, int col) {

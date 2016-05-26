@@ -4,7 +4,7 @@ public class Vertical_Horizontal extends BWDetector {
 
 	public Vertical_Horizontal(byte[] newPixels, int height, int width) {
 		super(newPixels, height, width);
-		THRESHOLD = 40;
+		THRESHOLD = 30;
 	}
 
 	protected boolean canBeEdge(int row, int col) {
